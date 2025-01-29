@@ -1,8 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router/router";
 
 function App() {
-  return <div className="text-3xl font-bold underline">Meet! Eat !</div>;
+  return (
+    <BrowserRouter>
+      {/* <Header />   */}
+      <Router />
+      {/* <Footer /> */}
+    </BrowserRouter>
+  );
 }
 
 export default App;
